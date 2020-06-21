@@ -124,7 +124,7 @@ $(document).ready(function() {
 			var anchorid = anchor.replace(/[^a-z]+|\s+/gmi, '');
 			$( "#linklist" ).append('<a href="javascript:seek(\''+anchor+'\','+tsp+');" id="'+anchorid+'">'+ts+' '+anchortext+'</a>');
 		}
-		$( "#linklist" ).append('<br><small><a href="https://github.com/guettel/youteach/" target="_blank">YouTeach.js 06/2020</a></small>');
+		$( "#linklist" ).append('<br><small><a href="https://github.com/guettel/youteach/" target="_blank">YouTeach.js version 06/2020</a></small>');
 	});
 	
 }); 
