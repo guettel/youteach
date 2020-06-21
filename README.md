@@ -22,11 +22,9 @@ It has been built to support blended learning for a Python programming course, b
    * line 15: change the value of `ytVideoId` to the id of your YouTube video. Example: If your video URL is https://www.youtube.com/watch?v=yZH74R58h40, then the id is `yZH74R58h40`
    * line 16ff: change the timestamps and link names so that they coincide with the timings in the YouTube video and the anchor links in the exported HTML file from step 2. In order to obtain the anchor links, simply hover over a heading in the HTML file and read off the URL part following the `#` symbol.
 
-That's it. 
-
 ## Feedback
 
-I hope you find **youteach.js** useful for your teaching. If so, I'd keen to know and would appreciate any feedback: stefan.guettel@manchester.ac.uk
+I hope you find **youteach.js** useful for your teaching. If so, I'd be keen to know and would appreciate any feedback: stefan.guettel@manchester.ac.uk
 
 ## Acknowledgements
 
