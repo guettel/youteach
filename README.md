@@ -1,4 +1,4 @@
-# youteach.js
+# YouTeach.js
 
 **youteach.js** is a simple tool to synchronize YouTube videos and Jupyter Notebooks in the browser. It also supports integration of the repl.it code editor.
 
