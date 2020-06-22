@@ -24,11 +24,11 @@ It has been built to support blended learning for a Python programming course, b
    * line 14: change the value of `replitUrl` to the URL of a shared repl.it editor
    * line 15: change the value of `ytVideoId` to the id of your YouTube lecture video
    
-     Example: If your video URL is https://www.youtube.com/watch?v=yZH74R58h40, then the id is `yZH74R58h40`
+     *Example:* If your video URL is https://www.youtube.com/watch?v=yZH74R58h40, then the id is `yZH74R58h40`
      
    * line 16ff: change the timestamps and anchor names in `tslist` so that they coincide with the timings in the YouTube video and the anchors in the HTML file. In order to obtain the anchors, simply hover over a heading in the HTML file and read off the URL part following the `#` symbol.
    
-     Example: If the URL points to `https://{some domain}/example-notebook.html#Python-versions` and the corresponding timestamp in the YouTube video is `11:42`, then the entry in `tslist` should be `'11:42 Python-versions'`.
+     *Example:* If the URL points to `https://{some domain}/example-notebook.html#Python-versions` and the corresponding timestamp in the YouTube video is `11:42`, then the entry in `tslist` should be `'11:42 Python-versions'`.
 
 ## Feedback
 
