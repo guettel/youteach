@@ -21,7 +21,7 @@ It has been built to support blended learning for a Python programming course, b
 **4.** Open `index.html` in a text editor and modify lines 11-37 as follows:
    * line 11: change this to the title of your lecture
    * line 13: change the value of `notebookUrl` to the name of the exported HTML file
-   * line 14: change the value of `replitUrl` to the URL of a shared repl.it editor
+   * line 14: change the value of `replitUrl` to the URL of a shared repl.it editor (or set to `''` if not needed)
    * line 15: change the value of `ytVideoId` to the id of your YouTube lecture video
    
      *Example:* If your video URL is https://www.youtube.com/watch?v=yZH74R58h40, then the id is `yZH74R58h40`
