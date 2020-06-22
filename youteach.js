@@ -105,26 +105,29 @@ $(document).ready(function() {
 	   handleSelector: "#splitter1",
 	   resizeHeight: false
 	});
-	$(".panel-middle").resizable({
+	$(".panel-right").resizable({
 	   handleSelector: "#splitter2",
-	   resizeHeight: false
+	   resizeHeight: false,
+	   resizeWidthFrom: 'left'
 	});
 	
-	// deal with the linklist
-	$('#nb').ready(function() {
-		$('#nb').attr('src', notebookUrl);
-		$('#code').attr('src', replitUrl);
-		for (var i = 0; i < tslist.length; i++) {
-			var ts = tslist[i].substring(0,6).trim();
-			tsp = ts.split(':');
-			tsp = 60*parseInt(tsp[0]) + parseInt(tsp[1]);
-			var anchor = tslist[i].substring(6).trim();
-			var anchortext = anchor.replace(/-/g," ");
-			anchortext = anchortext.replace(/%22/g,"&quot;");
-			var anchorid = anchor.replace(/[^a-z]+|\s+/gmi, '');
-			$( "#linklist" ).append('<a href="javascript:seek(\''+anchor+'\','+tsp+');" id="'+anchorid+'">'+ts+' '+anchortext+'</a>');
-		}
-		$( "#linklist" ).append('<br><small><a href="https://github.com/guettel/youteach/" target="_blank">YouTeach.js version 06/2020</a></small>');
-	});
+	// deal with the iframes
+	$('#nb').attr('src', notebookUrl);
+	if (replitUrl) { 
+		$('#code').attr('src', replitUrl).delay(2000).show().animate({width:'50px'});
+	} else $('#splitter2').hide();
 	
+	// generate the linklist
+	for (var i = 0; i < tslist.length; i++) {
+		var ts = tslist[i].substring(0,6).trim();
+		tsp = ts.split(':');
+		tsp = 60*parseInt(tsp[0]) + parseInt(tsp[1]);
+		var anchor = tslist[i].substring(6).trim();
+		var anchortext = anchor.replace(/-/g," ");
+		anchortext = anchortext.replace(/%22/g,"&quot;");
+		var anchorid = anchor.replace(/[^a-z]+|\s+/gmi, '');
+		$( "#linklist" ).append('<a href="javascript:seek(\''+anchor+'\','+tsp+');" id="'+anchorid+'">'+ts+' '+anchortext+'</a>');
+	}
+	$( "#linklist" ).append('<br><small><a href="https://github.com/guettel/youteach/" target="_blank">YouTeach.js 06/2020</a></small>');
+
 }); 
