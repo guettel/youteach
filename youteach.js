@@ -39,7 +39,7 @@ function onYouTubeIframeAPIReady() {
 
 // The API will call this function when the video player is ready.
 function onPlayerReady(event) {
-	event.target.playVideo();
+	// event.target.playVideo(); 
 }
 
 // The API calls this function when the player's state changes. The function indicates when playing a video (state=1).
